@@ -1,0 +1,68 @@
+/* Margins*/
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+/*End Margins*/
+.sect-padding {
+  padding: 64px 0;
+}
+span.big-para {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--black-color);
+  line-height: 19.5px;
+}
+.medium-para,
+.sm-btn{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  color: var(--black-color);
+}
+input{
+  border-radius: 4px;
+}
+span.small-para {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--black-color);
+  line-height: 14.63px;
+}
+span.normal {
+  color: var(--alt-black-color);
+}
+.opacity{
+  opacity: 75%;
+}
+span{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  color: var(--black-opacity-color);
+}
+.fw-700 {
+  font-weight: 700;
+}
+.btn-main {
+  background-color: var(--Mint-Color);
+  color: var(--black-color);
+}

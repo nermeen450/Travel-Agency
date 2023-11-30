@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Listing</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body-color">
+    <!--Hero Section-->
+    <nav class="navbar mb-48 branch navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="img/Logo (4).svg" class="img-fluid" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="findFlight.html"
+                ><img src="img/airplane (1).svg" class="img-fluid" alt="" />Find
+                Flight</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="findStays.html"
+                ><img src="img/ion_bed (1).svg" class="img-fluid" alt="" />Find
+                Stays</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav second d-flex align-items-center">
+            <li class="nav-item fav">
+              <a href="favourites.html" class="nav-link">
+                <img src="img/heart.svg" class="img-fluid" alt="" />
+                Favourites
+              </a>
+            </li>
+            <li class="nav-item position-relative">
+              <div
+                class="nav-link person-profile d-flex align-items-center last profile"
+              >
+                <div class="person-img-container d-block position-relative">
+                  <img src="img/Ellipse 1 (2).svg" class="img-fluid" alt="" />
+                </div>
+                John D.
+              </div>
+              <div class="account-dropmenue position-absolute">
+                <a
+                  href="account.html"
+                  class="accountmenue-header last mb-24 d-flex align-items-center"
+                >
+                  <img src="img/Ellipse 1 (4).svg" alt="" />
+                  <div>
+                    <h6>John Doe.</h6>
+                    <span class="opacity-75">Online</span>
+                  </div>
+                </a>
+                <div class="mb-24 collapse-menues">
+                  <p class="mb-16">
+                    <button
+                      class="border-0 w-100 bg-transparent d-flex align-items-center justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample8"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <div>
+                        <img src="img/User (2).svg" class="img-fluid" alt="" />
+                        <span class="medium-para">My account</span>
+                      </div>
+                      <img
+                        src="img/chevron_forward.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample8">
+                    <div class="card card-body">
+                      <a class="nav-link last" href="accountHistory.html"
+                        >Account History</a
+                      >
+                      <a class="nav-link last" href="accountHistory2.html"
+                        >Account History2</a
+                      >
+                    </div>
+                  </div>
+                  <p class="mb-16">
+                    <button
+                      class="border-0 w-100 bg-transparent d-flex align-items-center justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample9"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <div>
+                        <img src="img/card.svg" class="img-fluid" alt="" />
+                        <span class="medium-para">Payments</span>
+                      </div>
+                      <img
+                        src="img/chevron_forward.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample9">
+                    <div class="card card-body">
+                      <a class="nav-link last" href="paymentMethod.html"
+                        >payment Method</a
+                      >
+                    </div>
+                  </div>
+                  <p class="mb-16">
+                    <button
+                      class="border-0 w-100 bg-transparent d-flex align-items-center justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample10"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <div>
+                        <img src="img/settings.svg" class="img-fluid" alt="" />
+                        <span class="medium-para">Settings</span>
+                      </div>
+                      <img
+                        src="img/chevron_forward.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample10">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This
+                      panel is hidden by default but revealed when the user
+                      activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="mb-16">
+                    <button
+                      class="border-0 w-100 bg-transparent d-flex align-items-center justify-content-between"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseExample15"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <div>
+                        <img src="img/settings.svg" class="img-fluid" alt="" />
+                        <span class="medium-para">Support</span>
+                      </div>
+                      <img
+                        src="img/chevron_forward.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample15">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This
+                      panel is hidden by default but revealed when the user
+                      activates the relevant trigger.
+                    </div>
+                  </div>
+                  <div class="logout">
+                    <img src="img/Logout.svg" class="img-fluid" alt="" />
+                    <span class="medium-para">Logout</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="search-hotel mb-32">
+        <div class="row">
+          <div class="col-12 col-md-3 mb-4">
+            <div class="position-relative from-to">
+              <div class="position-absolute label-span">From - To</div>
+              <select class="form-select">
+                <option selected="">Lahore - Karachi</option>
+                <option value="1">Karachi - Lahore</option>
+                <option value="2">Lahore - Karachi</option>
+                <option value="3">Karachi - Lahore</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-2 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">Trip</div>
+              <select class="form-select">
+                <option selected="">Return</option>
+                <option value="1">Karachi - Lahore</option>
+                <option value="2">Lahore - Karachi</option>
+                <option value="3">Karachi - Lahore</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">Depart- Return</div>
+              <input
+                class="form-control"
+                type="text"
+                value="07 Nov 22 - 13 Nov 22"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">Passenger - Class</div>
+              <input
+                class="form-control"
+                type="text"
+                value="1 Passenger, Economy"
+              />
+            </div>
+          </div>
+          <div class="col-3 col-md-1">
+            <button class="search-btn border-0">
+              <img src="img/Search (3).svg" class="img-fluid" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row page-container">
+        <div class="col-12 col-md-3 page-sidebar">
+          <div class="row">
+            <h4>Filters</h4>
+            <div class="col-12">
+              <div class="sidebar-collapse">
+                <p>
+                  <button
+                    class="border-0 collapse-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <span>Price</span>
+                    <img src="img/chevron_down.svg" class="img-fluid" alt="" />
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body border-0 p-0">
+                    <div class="price-bar">
+                      <span class="small-para"></span>
+                      <div class="bar"></div>
+                      <span class="small-para"></span>
+                    </div>
+                    <div>
+                      <span class="small-para">$50</span>
+                      <span class="small-para">$1200</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="sidebar-collapse">
+                <p>
+                  <button
+                    class="border-0 collapse-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample2"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <span>Rating</span>
+                    <img src="img/chevron_down.svg" class="img-fluid" alt="" />
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample2">
+                  <div class="card card-body border-0 p-0">
+                    <div class="rating-spans">
+                      <span class="small-para">0+</span>
+                      <span class="small-para">1+</span>
+                      <span class="small-para">2+</span>
+                      <span class="small-para">3+</span>
+                      <span class="small-para">4+</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="sidebar-collapse">
+                <p>
+                  <button
+                    class="border-0 collapse-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample4"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <span>Freebies</span>
+                    <img src="img/chevron_down.svg" class="img-fluid" alt="" />
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample4">
+                  <div class="card card-body border-0 p-0">
+                    <div class="rating-spans">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Free breakfast
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Free parking
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Free internet
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Free airport shuttle
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Free cancellation
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="sidebar-collapse">
+                <p>
+                  <button
+                    class="border-0 collapse-btn"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample5"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    <span>Amenities</span>
+                    <img src="img/chevron_down.svg" class="img-fluid" alt="" />
+                  </button>
+                </p>
+                <div class="collapse" id="collapseExample5">
+                  <div class="card card-body border-0 p-0">
+                    <div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          24hr front desk
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Air-conditioned
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Fitness
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Pool
+                        </label>
+                      </div>
+                      <span class="red">+24 more</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 page-content">
+          <div class="row headings higher mb-32">
+            <div class="col-12 col-md-3">
+              <button
+                class="heading text-start after position-relative w-100 bg-transparent"
+              >
+                <h6>Cheapest</h6>
+                <span>$99.2h 18m</span>
+              </button>
+            </div>
+            <div class="col-12 col-md-3">
+              <button
+                class="heading active text-start after position-relative w-100 bg-transparent"
+              >
+                <h6>Best</h6>
+                <span>$99.2h 18m</span>
+              </button>
+            </div>
+            <div class="col-12 col-md-3">
+              <button
+                class="heading after text-start position-relative w-100 bg-transparent"
+              >
+                <h6>Quickest</h6>
+                <span>$99.2h 18m</span>
+              </button>
+            </div>
+            <div class="col-12 col-md-3">
+              <button
+                class="heading text-start position-relative border-0 w-100 bg-transparent"
+              >
+                <img src="img/menu (4).svg" class="img-fluid" alt="" />
+                <span class="medium-para">Other sort</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="page-details d-flex align-items-center justify-content-between mb-32"
+          >
+            <div>Showing 4 of <span class="red">257 places</span></div>
+            <div>
+              <span>Sort by</span> Recommended
+              <img src="img/chevron_down.svg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="row hotels">
+            <div class="col-12">
+              <div class="row hotel mb-32">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="hotel-img-container">
+                    <img
+                      src="img/image 40.png"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                  <div class="hotel-dt mb-16">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-16"
+                    >
+                      <div>
+                        <span class="small-para alt-btn">4.2</span>
+                        <span class="small-para"
+                          ><b>Very Good</b> 54 reviews</span
+                        >
+                      </div>
+                      <div>
+                        <span>starting from</span>
+                        <h4 class="red text-end"><b>$104</b></h4>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-5 mb-16">
+                      <div class="form-check d-flex align-items-start">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <h6>12:00 pm - 01:28 pm</h6>
+                          <span class="opacity-50">Emirates</span>
+                        </label>
+                      </div>
+                      <div>
+                        <span><b>non stop</b></span>
+                      </div>
+                      <div>
+                        <h6>2h 28m</h6>
+                        <span class="opacity-50">EWR-BNA</span>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-5">
+                      <div class="form-check d-flex align-items-start">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <h6>12:00 pm - 01:28 pm</h6>
+                          <span class="opacity-50">Emirates</span>
+                        </label>
+                      </div>
+                      <div>
+                        <span><b>non stop</b></span>
+                      </div>
+                      <div>
+                        <h6>2h 28m</h6>
+                        <span class="opacity-50">EWR-BNA</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-2"
+                  >
+                    <span class="alt-sm-btn"
+                      ><img
+                        src="img/heart (2).svg"
+                        class="img-fluid heart-container"
+                        alt=""
+                    /></span>
+                    <a
+                      href="flightDetailPage.html"
+                      class="w-100 text-center main-btn"
+                    >
+                      <b>View Deals</b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row hotel mb-32">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="hotel-img-container">
+                    <img
+                      src="img/image 41.png"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                  <div class="hotel-dt mb-16">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-16"
+                    >
+                      <div>
+                        <span class="small-para alt-btn">4.2</span>
+                        <span class="small-para"
+                          ><b>Very Good</b> 54 reviews</span
+                        >
+                      </div>
+                      <div>
+                        <span>starting from</span>
+                        <h4 class="red text-end"><b>$104</b></h4>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-5 mb-16">
+                      <div class="form-check d-flex align-items-start">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <h6>12:00 pm - 01:28 pm</h6>
+                          <span class="opacity-50">Emirates</span>
+                        </label>
+                      </div>
+                      <div>
+                        <span><b>non stop</b></span>
+                      </div>
+                      <div>
+                        <h6>2h 28m</h6>
+                        <span class="opacity-50">EWR-BNA</span>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-5">
+                      <div class="form-check d-flex align-items-start">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <h6>12:00 pm - 01:28 pm</h6>
+                          <span class="opacity-50">Emirates</span>
+                        </label>
+                      </div>
+                      <div>
+                        <span><b>non stop</b></span>
+                      </div>
+                      <div>
+                        <h6>2h 28m</h6>
+                        <span class="opacity-50">EWR-BNA</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-2"
+                  >
+                    <span class="alt-sm-btn"
+                      ><img
+                        src="img/heart (2).svg"
+                        class="img-fluid heart-container"
+                        alt=""
+                    /></span>
+                    <a
+                      href="flightDetailPage.html"
+                      class="w-100 text-center main-btn"
+                    >
+                      <b>View Deals</b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row hotel mb-32">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="hotel-img-container">
+                    <img
+                      src="img/image 43.png"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                  <div class="hotel-dt mb-16">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-16"
+                    >
+                      <div>
+                        <span class="small-para alt-btn">4.2</span>
+                        <span class="small-para"
+                          ><b>Very Good</b> 54 reviews</span
+                        >
+                      </div>
+                      <div>
+                        <span>starting from</span>
+                        <h4 class="red text-end"><b>$104</b></h4>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-5 mb-16">
+                      <div class="form-check d-flex align-items-start">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <h6>12:00 pm - 01:28 pm</h6>
+                          <span class="opacity-50">Emirates</span>
+                        </label>
+                      </div>
+                      <div>
+                        <span><b>non stop</b></span>
+                      </div>
+                      <div>
+                        <h6>2h 28m</h6>
+                        <span class="opacity-50">EWR-BNA</span>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-5">
+                      <div class="form-check d-flex align-items-start">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <h6>12:00 pm - 01:28 pm</h6>
+                          <span class="opacity-50">Emirates</span>
+                        </label>
+                      </div>
+                      <div>
+                        <span><b>non stop</b></span>
+                      </div>
+                      <div>
+                        <h6>2h 28m</h6>
+                        <span class="opacity-50">EWR-BNA</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-2"
+                  >
+                    <span class="alt-sm-btn"
+                      ><img
+                        src="img/heart (2).svg"
+                        class="img-fluid heart-container"
+                        alt=""
+                    /></span>
+                    <a
+                      href="flightDetailPage.html"
+                      class="w-100 text-center main-btn"
+                    >
+                      <b>View Deals</b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row hotel mb-32">
+                <div class="col-12 col-md-4 col-lg-3">
+                  <div class="hotel-img-container">
+                    <img
+                      src="img/image 45.png"
+                      class="img-fluid w-100"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                  <div class="hotel-dt mb-16">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-16"
+                    >
+                      <div>
+                        <span class="small-para alt-btn">4.2</span>
+                        <span class="small-para"
+                          ><b>Very Good</b> 54 reviews</span
+                        >
+                      </div>
+                      <div>
+                        <span>starting from</span>
+                        <h4 class="red text-end"><b>$104</b></h4>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-5 mb-16">
+                      <div class="form-check d-flex align-items-start">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <h6>12:00 pm - 01:28 pm</h6>
+                          <span class="opacity-50">Emirates</span>
+                        </label>
+                      </div>
+                      <div>
+                        <span><b>non stop</b></span>
+                      </div>
+                      <div>
+                        <h6>2h 28m</h6>
+                        <span class="opacity-50">EWR-BNA</span>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-5">
+                      <div class="form-check d-flex align-items-start">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          <h6>12:00 pm - 01:28 pm</h6>
+                          <span class="opacity-50">Emirates</span>
+                        </label>
+                      </div>
+                      <div>
+                        <span><b>non stop</b></span>
+                      </div>
+                      <div>
+                        <h6>2h 28m</h6>
+                        <span class="opacity-50">EWR-BNA</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-2"
+                  >
+                    <span class="alt-sm-btn"
+                      ><img
+                        src="img/heart (2).svg"
+                        class="img-fluid heart-container"
+                        alt=""
+                    /></span>
+                    <a
+                      href="flightDetailPage.html"
+                      class="w-100 text-center main-btn"
+                    >
+                      <b>View Deals</b>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <button class="border-0 w-100 black-btn">
+                Show more results
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="subscribe">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 col-md-7 mb-4">
+            <div class="subscribe-text">
+              <h2>
+                Subscribe<br />
+                Newsletter
+              </h2>
+              <h5>The Travel</h5>
+              <p>
+                Get inspired! Receive travel discounts, tips and behind the
+                scenes stories.
+              </p>
+              <div
+                class="input-box d-flex align-items-center justify-content-center"
+              >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your email address"
+                />
+                <button class="sub-btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="img/emojione-v1_open-mailbox-with-lowered-flag.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <img src="img/Logo (3).svg" class="img-fluid" alt="" />
+            <div class="fSocials mt-3">
+              <img
+                src="img/akar-icons_facebook-fill.svg"
+                class="img-fluid"
+                alt=""
+              />
+              <img
+                src="img/akar-icons_twitter-fill.svg"
+                class="img-fluid"
+                alt=""
+              />
+              <img
+                src="img/akar-icons_youtube-fill.svg"
+                class="img-fluid"
+                alt=""
+              />
+              <img
+                src="img/ant-design_instagram-filled.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>Our Destinations</h6>
+            <ul>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">Alaksa</a></li>
+              <li><a href="#">France</a></li>
+              <li><a href="#">Iceland</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>Our Activities</h6>
+            <ul>
+              <li><a href="#">Northern Lights</a></li>
+              <li><a href="#">Cruising & sailing</a></li>
+              <li><a href="#">Multi-activities</a></li>
+              <li><a href="#">Kayaing</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>Travel Blogs</h6>
+            <ul>
+              <li><a href="#">Bali Travel Guide</a></li>
+              <li><a href="#">Sri Lanks Travel Guide</a></li>
+              <li><a href="#">Peru Travel Guide</a></li>
+              <li><a href="#">Bali Travel Guide</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>About Us</h6>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Work with us</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>Contact Us</h6>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Work with us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

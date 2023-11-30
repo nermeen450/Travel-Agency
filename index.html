@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="hero home">
+      <nav class="navbar home navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="img/Group (4).svg" class="img-fluid" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="findFlight.html"
+                  ><img src="img/airplane.svg" class="img-fluid" alt="" />Find
+                  Flight</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="findStays.html"
+                  ><img src="img/ion_bed.svg" class="img-fluid" alt="" />Find
+                  Stays</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <a href="login.html" class="btn nav-link">Login</a>
+              <a href="signUp.html" class="btn">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-text text-neutral mx-auto text-center">
+        <span class="fw-700">Helping Others</span>
+        <h1 class="fw-700">Live & Travel</h1>
+        <p class="big-p fw-600">Special offers to suit your plan</p>
+      </div>
+    </section>
+    <section class="booking">
+      <div class="container">
+        <div class="header">
+          <button class="booking-btn active" id="flightsBtn">
+            <img src="img/airplane (1).svg" class="img-fluid" alt="" />Flights
+          </button>
+          <button class="booking-btn" id="staysBtn">
+            <img src="img/ion_bed (1).svg" class="img-fluid" alt="" />Stays
+          </button>
+        </div>
+        <div class="row mb-4" data-id="flightsBtn">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">From - To</div>
+              <select class="form-select">
+                <option selected>Lahore - Karachi</option>
+                <option value="1">Karachi - Lahore</option>
+                <option value="2">Lahore - Karachi</option>
+                <option value="3">Karachi - Lahore</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-2 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">Trip</div>
+              <select class="form-select">
+                <option selected>Return</option>
+                <option value="1">Karachi - Lahore</option>
+                <option value="2">Lahore - Karachi</option>
+                <option value="3">Karachi - Lahore</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">Depart- Return</div>
+              <input
+                class="form-control"
+                type="text"
+                value="07 Nov 22 - 13 Nov 22"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">Passenger - Class</div>
+              <input
+                class="form-control"
+                type="text"
+                value="1 Passenger, Economy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row mb-4 staysrow" data-id="staysBtn">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">From - To</div>
+              <select class="form-select">
+                <option selected>Lahore - Karachi</option>
+                <option value="1">Karachi - Lahore</option>
+                <option value="2">Lahore - Karachi</option>
+                <option value="3">Karachi - Lahore</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-2 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">Trip</div>
+              <select class="form-select">
+                <option selected>Return</option>
+                <option value="1">Karachi - Lahore</option>
+                <option value="2">Lahore - Karachi</option>
+                <option value="3">Karachi - Lahore</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">Depart- Return</div>
+              <input
+                class="form-control"
+                type="text"
+                value="07 Nov 22 - 13 Nov 22"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <div class="position-relative">
+              <div class="position-absolute label-span">Passenger - Class</div>
+              <input
+                class="form-control"
+                type="text"
+                value="1 Passenger, Economy"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="booking-more ms-auto">
+          <a href="#">+ Add Promo Code</a>
+          <a class="main-btn" href="flightListing.html"
+            ><img src="img/Paper Plane.svg" class="img-fluid" alt="" />Show
+            Filghts</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="planning">
+      <div class="container">
+        <div
+          class="section-header d-flex align-items-center justify-content-between"
+        >
+          <div class="title">
+            <h3>Plan your perfect trip</h3>
+            <p>Search Flights & Places Hire to our most popular destinations</p>
+          </div>
+          <button class="header-btn">See more places</button>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="trip d-flex align-items-center">
+              <img src="img/Rectangle 3.svg" class="img-fluid" alt="" />
+              <div class="trip-text">
+                <div class="trip-title">Istanbul, Turkey</div>
+                <p>Flights, Hotels, Resorts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="trip d-flex align-items-center">
+              <img src="img/Rectangle 3 (1).svg" class="img-fluid" alt="" />
+              <div class="trip-text">
+                <div class="trip-title">Sydney, Australia</div>
+                <p>Flights, Hotels, Resorts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="trip d-flex align-items-center">
+              <img src="img/Rectangle 4 (1).svg" class="img-fluid" alt="" />
+              <div class="trip-text">
+                <div class="trip-title">Baku, Azerbaijan</div>
+                <p>Flights, Hotels, Resorts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="trip d-flex align-items-center">
+              <img src="img/Rectangle 4 (2).svg" class="img-fluid" alt="" />
+              <div class="trip-text">
+                <div class="trip-title">Malé, Maldives</div>
+                <p>Flights, Hotels, Resorts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="trip d-flex align-items-center">
+              <img src="img/Rectangle 3 (2).svg" class="img-fluid" alt="" />
+              <div class="trip-text">
+                <div class="trip-title">Paris, France</div>
+                <p>Flights, Hotels, Resorts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="trip d-flex align-items-center">
+              <img src="img/Rectangle 4 (3).svg" class="img-fluid" alt="" />
+              <div class="trip-text">
+                <div class="trip-title">New York, US</div>
+                <p>Flights, Hotels, Resorts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="trip d-flex align-items-center">
+              <img src="img/Rectangle 3 (3).svg" class="img-fluid" alt="" />
+              <div class="trip-text">
+                <div class="trip-title">London, UK</div>
+                <p>Flights, Hotels, Resorts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="trip d-flex align-items-center">
+              <img src="img/Rectangle 3 (4).svg" class="img-fluid" alt="" />
+              <div class="trip-text">
+                <div class="trip-title">Tokyo, Japan</div>
+                <p>Flights, Hotels, Resorts</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="trip d-flex align-items-center">
+              <img src="img/Rectangle 4 (4).svg" class="img-fluid" alt="" />
+              <div class="trip-text">
+                <div class="trip-title">Dubai, UAE</div>
+                <p>Flights, Hotels, Resorts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-4">
+            <div class="srv-container position-relative text-center">
+              <img src="img/Rectangle 40.svg" class="img-fluid" alt="" />
+              <div class="srv-text">
+                <div class="box-title">Flights</div>
+                <p>
+                  Search Flights & Places Hire to our most popular destinations
+                </p>
+                <a href="flightListing.html" class="main-btn"
+                  ><img
+                    src="img/Paper Plane.svg"
+                    class="img-fluid"
+                    alt=""
+                  />Show Filghts</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-4">
+            <div class="srv-container position-relative text-center">
+              <img src="img/Rectangle 41.svg" class="img-fluid" alt="" />
+              <div class="srv-text">
+                <div class="box-title">Hotels</div>
+                <p>
+                  Search hotels & Places Hire to our most popular destinations
+                </p>
+                <a href="flightListing.html" class="main-btn"
+                  ><img
+                    src="img/Paper Plane.svg"
+                    class="img-fluid"
+                    alt=""
+                  />Show Filghts</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div
+          class="section-header d-flex align-items-center justify-content-between"
+        >
+          <div class="title">
+            <h3>Reviews</h3>
+            <p>What people says about Golobe facilities</p>
+          </div>
+          <button class="header-btn">See All</button>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="review position-relative">
+              <div
+                class="review-overlay position-absolute d-none d-md-block"
+              ></div>
+              <h4>“A real sense of community, nurtured”</h4>
+              <p>
+                Really appreciate the help and support from the staff during
+                these tough times. Shoutout to Katie for helping me always, even
+                when I was out of the country. And always available when needed.
+              </p>
+              <a href="#" class="d-block ms-auto">View more</a>
+              <div class="starts mb-3">
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+              </div>
+              <span class="name">Olga</span>
+              <p>Weave Studios – Kai Tak</p>
+              <div>
+                <img
+                  src="img/flat-color-icons_google.svg"
+                  class="img-fluid"
+                  alt=""
+                />Google
+              </div>
+              <img
+                src="img/Rectangle 36 (1).svg"
+                class="img-fluid review-img"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="review position-relative">
+              <div
+                class="review-overlay position-absolute d-none d-md-block"
+              ></div>
+              <h4>“The facilities are superb. Clean, slick, bright.”</h4>
+              <p>
+                “A real sense of community, nurtured”Really appreciate the help
+                and support from the staff during these tough times. Shoutout to
+                Katie for helping me always, even when I was out of the country.
+                And always available when needed.View moreOlgaWeave Studios –
+                Kai TakGoogle
+              </p>
+              <a href="#" class="d-block ms-auto">View more</a>
+              <div class="starts mb-3">
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+              </div>
+              <span class="name">Thomas</span>
+              <p>Weave Studios – Olympic</p>
+              <div>
+                <img
+                  src="img/flat-color-icons_google.svg"
+                  class="img-fluid"
+                  alt=""
+                />Google
+              </div>
+              <img
+                src="img/Rectangle 36 (2).svg"
+                class="img-fluid review-img"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="review position-relative">
+              <div
+                class="review-overlay position-absolute d-none d-md-block"
+              ></div>
+              <h4>“A real sense of community, nurtured”</h4>
+              <p>
+                Really appreciate the help and support from the staff during
+                these tough times. Shoutout to Katie for helping me always, even
+                when I was out of the country. And always available when needed.
+              </p>
+              <a href="#" class="d-block ms-auto">View more</a>
+              <div class="stars mb-3">
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+                <img src="img/ion_star.svg" class="img-fluid" alt="" />
+              </div>
+              <div class="name">Eliot</div>
+              <p>Weave Studios – Kai Tak</p>
+              <div>
+                <img
+                  src="img/flat-color-icons_google.svg"
+                  class="img-fluid"
+                  alt=""
+                />Google
+              </div>
+              <img
+                src="img/Rectangle 36 (2).svg"
+                class="img-fluid review-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-12 col-md-7 mb-4">
+            <div class="subscribe-text">
+              <h2>
+                Subscribe<br />
+                Newsletter
+              </h2>
+              <h5>The Travel</h5>
+              <p>
+                Get inspired! Receive travel discounts, tips and behind the
+                scenes stories.
+              </p>
+              <div
+                class="input-box d-flex align-items-center justify-content-center"
+              >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your email address"
+                />
+                <button class="sub-btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="img/emojione-v1_open-mailbox-with-lowered-flag.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <img src="img/Logo (3).svg" class="img-fluid" alt="" />
+            <div class="fSocials mt-3">
+              <img
+                src="img/akar-icons_facebook-fill.svg"
+                class="img-fluid"
+                alt=""
+              />
+              <img
+                src="img/akar-icons_twitter-fill.svg"
+                class="img-fluid"
+                alt=""
+              />
+              <img
+                src="img/akar-icons_youtube-fill.svg"
+                class="img-fluid"
+                alt=""
+              />
+              <img
+                src="img/ant-design_instagram-filled.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>Our Destinations</h6>
+            <ul>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">Alaksa</a></li>
+              <li><a href="#">France</a></li>
+              <li><a href="#">Iceland</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>Our Activities</h6>
+            <ul>
+              <li><a href="#">Northern Lights</a></li>
+              <li><a href="#">Cruising & sailing</a></li>
+              <li><a href="#">Multi-activities</a></li>
+              <li><a href="#">Kayaing</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>Travel Blogs</h6>
+            <ul>
+              <li><a href="#">Bali Travel Guide</a></li>
+              <li><a href="#">Sri Lanks Travel Guide</a></li>
+              <li><a href="#">Peru Travel Guide</a></li>
+              <li><a href="#">Bali Travel Guide</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>About Us</h6>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Work with us</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-2 mb-3 text-center text-md-start">
+            <h6>Contact Us</h6>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Work with us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
